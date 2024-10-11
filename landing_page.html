@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Master Makeup with Michelly Palma</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        section {
+            height: 100vh; /* Each section takes full screen height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            color: #fff;
+        }
+
+        #course-highlights {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1, h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        .cta-button {
+            background-color: #e91e63;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background-color: #c2185b;
+        }
+
+        /* Ensure sections take full viewport width and height */
+        @media only screen and (max-width: 768px) {
+            h1, h2 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Master Makeup with Michelly Palma’s Global Masterclass</h1>
+            <p>Learn from an internationally renowned expert, unlock exclusive tips, and boost your career.</p>
+            <a href="#pricing" class="cta-button">Enroll Now</a>
+        </div>
+    </section>
+
+    <!-- Course Highlights Section -->
+    <section id="course-highlights">
+        <div class="highlights-content">
+            <h2>Course Highlights</h2>
+            <ul>
+                <li>Live interactive sessions</li>
+                <li>Exclusive access to resources</li>
+                <li>Personalized feedback from Michelly</li>
+                <li>Multilingual support</li>
+            </ul>
+            <a href="#details" class="cta-button">See Full Course Details</a>
+        </div>
+    </section>
+
+    <!-- Add other sections similarly... -->
+
+    <script>
+        document.querySelectorAll('section').forEach((section) => {
+            section.style.scrollSnapAlign = 'start';
+        });
+
+        window.addEventListener('scroll', () => {
+            document.body.style.scrollBehavior = 'smooth';
+        });
+    </script>
+</body>
+</html>
